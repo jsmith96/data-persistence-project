@@ -82,5 +82,6 @@ public class MainManager : MonoBehaviour
     void UpdateHighScoreDisplay()
     {
         HighScoreText.text = $"Best Score : {HighScoreManager.Instance.highScoreName} : {HighScoreManager.Instance.highScore}";
+        HighScoreManager.Instance.SaveHighScore();
     }
 }
